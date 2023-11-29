@@ -17,7 +17,7 @@ jobs:
                 file_name: [New Text Document.txt]
 
         env:
-            MODE: "dev"
+            MODE: ${{secrets.MODE}}
         steps:
             - name: github-actions-demo
             - uses: actions/checkout@v2
